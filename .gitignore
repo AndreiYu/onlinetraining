@@ -1,0 +1,33 @@
+###  GENERAL ###
+
+.project
+/logs/
+/test-output/
+
+
+
+### Eclipse ###
+
+.metadata
+build/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+
+# IntelliJ
+/out/
+*.iml
+/target/
+.idea/
+

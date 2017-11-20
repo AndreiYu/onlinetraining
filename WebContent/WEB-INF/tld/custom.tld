@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+
+	<tlib-version>2.1</tlib-version>
+	<jsp-version>2.3</jsp-version>
+	<short-name>msgtag</short-name>
+	<uri>com.yushkev.customtag</uri>
+
+	<tag>
+		<name>display_msg</name>
+		<tag-class>com.yushkev.onlinetraining.customtag.DisplayMessageTag
+		</tag-class>
+		<!-- <body-content>scriptless</body-content> -->
+		<attribute>
+			<description>tag prints messages, attached to session or request and
+				removes it after showing. If message is empty, prints nothing
+			</description>
+ 			<name>info_message</name>
+			<required>false</required> 
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>display_img</name>
+		<tag-class>com.yushkev.onlinetraining.customtag.ShowAvatarTag
+		</tag-class>
+		<!-- <body-content>scriptless</body-content> -->
+		<description>tag shows user avatar or default image</description>
+		<attribute>
+			<description>user</description>
+			<name>user</name>
+			<type>com.yushkev.onlinetraining.entity.User</type>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>course id</description>
+			<name>id</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<attribute>
+			<description>css class</description>
+			<name>cssClass</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+
+</taglib>

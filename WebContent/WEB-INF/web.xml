@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+
+	<display-name>onlinetraining</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Not found -->
+	<error-page>
+		<error-code>404</error-code>
+		<location>/jsp/error/404.jsp</location>
+	</error-page>
+
+	<!-- Forbidden -->
+	<!-- <error-page> <error-code>403</error-code> <location>/jsp/error/403.jsp</location> 
+		</error-page> -->
+
+	<!-- All other -->
+	<error-page>
+		<exception-type>java.lang.Throwable</exception-type>
+		<location>/jsp/error/error.jsp</location>
+	</error-page>
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<!-- <jsp-config> <taglib> <taglib-uri>customtags</taglib-uri> <taglib-location>/WEB-INF/tld/custom.tld</taglib-location> 
+		</taglib> <jsp-property-group> <url-pattern>*.jsp</url-pattern> <page-encoding>UTF-8</page-encoding> 
+		</jsp-property-group> </jsp-config> -->
+
+</web-app>
